@@ -71,4 +71,11 @@ exec ./geth \
     --op-network="$OP_NODE_NETWORK" \
     --port="$P2P_PORT" \
     --rollup.disabletxpoolgossip=true \
+    --cache=24576 \
+    --cache.blocklogs=256 \
+    --history.transactions=500000 \
+    --rpc.batch-response-max-size=250000000 \
+    --rpc.batch-request-limit=5000 \
+    --rpc.gascap=100000000 \
+    --rpc.evmtimeout=7s
     $ADDITIONAL_ARGS # intentionally unquoted

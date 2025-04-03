@@ -39,7 +39,7 @@ exec ./op-reth node \
   --engine.caching-and-prewarming \
   --engine.cross-block-cache-size=16384 \
   --engine.memory-block-buffer-target=4 \
-  --db.max-size=1.8TB \
+  --db.max-size=1800GB \
   --db.growth-step=20GB \
   --rpc.gascap=250000000 \ 
   --rpc-cache.max-blocks=15000 \

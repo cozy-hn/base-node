@@ -41,7 +41,7 @@ exec ./op-reth node \
   --engine.memory-block-buffer-target=4 \
   --db.max-size=1800GB \
   --db.growth-step=20GB \
-  --rpc.gascap=250000000 \ 
+  --rpc.gascap=250000000 \
   --rpc-cache.max-blocks=15000 \
   --rpc-cache.max-headers=5000 \
   --rpc.max-response-size=500 \

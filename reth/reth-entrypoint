@@ -35,4 +35,15 @@ exec ./op-reth node \
   --metrics=0.0.0.0:"$METRICS_PORT" \
   --chain "$RETH_CHAIN" \
   --rollup.sequencer-http=$RETH_SEQUENCER_HTTP \
-  --rollup.disable-tx-pool-gossip
+  --rollup.disable-tx-pool-gossip \
+  --engine.caching-and-prewarming \
+  --engine.cross-block-cache-size=16384 \
+  --engine.memory-block-buffer-target=4 \
+  --db.max-size=1.8TB \
+  --db.growth-step=20GB \
+  --rpc.gascap=250000000 \ 
+  --rpc-cache.max-blocks=15000 \
+  --rpc-cache.max-headers=5000 \
+  --rpc.max-response-size=500 \
+  --full
+

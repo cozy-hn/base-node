@@ -71,7 +71,7 @@ exec ./geth \
     --op-network="$OP_NODE_NETWORK" \
     --port="$P2P_PORT" \
     --rollup.disabletxpoolgossip=true \
-    --cache=24576 \
+    --cache=40960 \
     --cache.blocklogs=256 \
     --history.transactions=500000 \
     --rpc.batch-response-max-size=250000000 \
